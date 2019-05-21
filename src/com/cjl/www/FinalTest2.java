@@ -18,4 +18,11 @@ public class FinalTest2 {
 //
 //        System.out.println("FinalTest2.main "+ss);
     }
+
+
+    //一个类的声明可否既是abstract,又是final
+
+    //为什么public的终态类型的变量一般是 static的　　　节省内存
+
+
 }
