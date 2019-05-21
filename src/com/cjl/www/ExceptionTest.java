@@ -12,19 +12,19 @@ package com.cjl.www;
  */
 public class ExceptionTest {
     public static void main(String[] args) {
-        Parent parent = new Child();
+        EParent parent = new EChild();
         parent.test();
     }
 }
 
-class Parent{
+class EParent{
     public void test() throws NullPointerException{
         System.out.println("Parent.test");
     }
 
 }
 
-class Child extends Parent{
+class EChild extends EParent{
 
 //    public void test() throws Exception{
 //        System.out.println("Child.test");
