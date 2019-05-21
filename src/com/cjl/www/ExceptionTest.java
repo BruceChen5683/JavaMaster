@@ -26,7 +26,7 @@ class Parent{
 
 class Child extends Parent{
 
-    public void test() throws Exception{
-        System.out.println("Child.test");
-    }
+//    public void test() throws Exception{
+//        System.out.println("Child.test");
+//    }
 }
