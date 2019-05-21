@@ -21,6 +21,9 @@ public class EqualTest {
         Person person1 =new Person("cjl");
 
         System.out.println(person.equals(person1));
+
+
+
     }
 }
 
