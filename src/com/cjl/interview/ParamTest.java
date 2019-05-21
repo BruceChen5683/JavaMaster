@@ -1,4 +1,4 @@
-package com.cjl.www;
+package com.cjl.interview;
 
 public class ParamTest {
     public void changeInt(int a){

@@ -1,6 +1,5 @@
-package com.cjl.www;
+package com.cjl.interview;
 
-import java.io.FileInputStream;
 import java.lang.reflect.Field;
 
 public class PrivateTest {
@@ -13,7 +12,7 @@ public class PrivateTest {
 
     public static void main(String[] args) {
         try {
-            Class clazz = Class.forName("com.cjl.www.PrivateTest");
+            Class clazz = Class.forName("com.cjl.interview.PrivateTest");
             Field field = clazz.getDeclaredField("name");
             field.setAccessible(true);
 

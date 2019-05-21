@@ -1,4 +1,4 @@
-package com.cjl.www;
+package com.cjl.interview;
 
 public class OrderTest {
     public static void main(String[] args) {
