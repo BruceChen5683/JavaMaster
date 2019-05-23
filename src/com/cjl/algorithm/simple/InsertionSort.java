@@ -1,6 +1,8 @@
-package com.cjl.algorithm;
+package com.cjl.algorithm.simple;
 
-public class InsertionSort extends MySortExt{
+import com.cjl.algorithm.base.MySortExt;
+
+public class InsertionSort extends MySortExt {
 
 
     @Override

@@ -1,4 +1,4 @@
-package com.cjl.algorithm;
+package com.cjl.algorithm.base;
 
 public interface MySort {
     public int[] sort(int[] array);
