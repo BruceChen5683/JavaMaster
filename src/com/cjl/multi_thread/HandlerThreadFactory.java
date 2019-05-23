@@ -9,7 +9,7 @@ public class HandlerThreadFactory implements ThreadFactory{
         System.out.println("creating new Thread");
         Thread t = new Thread(r);
         System.out.println("created "+ t.getName());
-        t.setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
+        t.setUncaughtExceptionHandler(new ThreadFactoryUncaughtExceptionHandler());
         System.out.println("eh =  "+t.getUncaughtExceptionHandler());
         return t;
     }

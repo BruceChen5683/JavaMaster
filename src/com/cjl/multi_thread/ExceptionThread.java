@@ -7,7 +7,8 @@ public class ExceptionThread implements Runnable{
 
     @Override
     public void run() {
-//        Thread t = Thread.currentThread();
+        Thread t = Thread.currentThread();
+        t.setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
 //        System.out.println("ExceptionThread.run by "+ t);
 //        System.out.println("ExceptionThread.run eh = "+ t.getUncaughtExceptionHandler());
 //        throw new RuntimeException();

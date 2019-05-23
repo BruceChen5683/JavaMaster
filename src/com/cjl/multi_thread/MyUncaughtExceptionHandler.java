@@ -3,6 +3,6 @@ package com.cjl.multi_thread;
 public class MyUncaughtExceptionHandler implements Thread.UncaughtExceptionHandler{
     @Override
     public void uncaughtException(Thread t, Throwable e) {
-        System.out.println("caught "+ e + "  :thread:"+t.getName());
+        System.out.println("MyUncaughtExceptionHandler "+ e);
     }
 }
