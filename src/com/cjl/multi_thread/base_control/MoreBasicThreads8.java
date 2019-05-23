@@ -1,8 +1,5 @@
 package com.cjl.multi_thread.base_control;
 
-import base_control.LiftOff;
-import concurrent.LiftOff;
-
 public class MoreBasicThreads8 {
     public static void main(String[] args) {
         try { // increase number of threads to see effect
