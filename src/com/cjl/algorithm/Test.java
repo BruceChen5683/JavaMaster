@@ -23,6 +23,10 @@ public class Test {
         selectionSort.myprint(selectionSort.sort(new int[]{99,1,1,2,5,2,3,32,3, 4, 1, 5, 2, 1}));
 
 
+        MySort insertionSort = new InsertionSort();
+        insertionSort.myprint(insertionSort.sort(new int[]{99,1,1,2,5,2,3,32,3, 4, 1, 5, 2, 1}));
+
+
 
     }
 
