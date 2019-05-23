@@ -3,7 +3,11 @@ package com.cjl.io.file;
 import java.io.File;
 import java.util.Arrays;
 
+/**
+ * 目录列表器
+ */
 public class DirList {
+
     public static void mylist(String path){
         File file = new File(path);
         if (file.isDirectory()){
