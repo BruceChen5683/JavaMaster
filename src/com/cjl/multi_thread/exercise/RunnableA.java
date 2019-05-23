@@ -12,7 +12,11 @@ public class RunnableA implements Runnable{
     public void run() {
         while (count -- > 0){
             System.out.println(name + "run count:"+ count);
-            Thread.yield();
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         System.out.println(name + "run end");
     }
