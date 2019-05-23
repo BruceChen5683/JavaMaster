@@ -15,8 +15,15 @@ public class Test {
 
 
 
-        MySort mySort = new BubbleSort();
-        mySort.myprint(mySort.sort(new int[]{99,1,1,2,5,2,3,32,3, 4, 1, 5, 2, 1}));
+        MySort bubbleSort = new BubbleSort();
+        bubbleSort.myprint(bubbleSort.sort(new int[]{99,1,1,2,5,2,3,32,3, 4, 1, 5, 2, 1}));
+
+
+        MySort selectionSort = new SelectionSort();
+        selectionSort.myprint(selectionSort.sort(new int[]{99,1,1,2,5,2,3,32,3, 4, 1, 5, 2, 1}));
+
+
+
     }
 
 
