@@ -1,4 +1,4 @@
-package com.cjl.www;
+package com.cjl.interview;
 
 public class ThreadTest3 {
     public static void main(String[] args) {
