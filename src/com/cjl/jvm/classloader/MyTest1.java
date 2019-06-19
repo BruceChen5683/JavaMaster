@@ -7,6 +7,11 @@ package com.cjl.jvm.classloader;
  *
  *
  * -XX:+TraceClassLoading,用于追踪类的加载信息并打印
+ *
+ * JVM参数三种情况
+ * -XX:+<option>   表示开启option选项
+ * -XX:-<option>   表示关闭option选项
+ * -XX:<option>=<value>   表示将option选项的值设置为value
  */
 public class MyTest1 {
     public static void main(String[] args) {
