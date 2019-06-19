@@ -13,7 +13,12 @@ package com.cjl.jvm.classloader;
  * ldc  表示将int,float或者String类型的常量值从常量池中推送至栈顶
  * bipush 表示将当字节（-128 - 127）的常量值从常量池中推送至栈顶
  * sipush 表示将一个短整数型常量值（-32768 - 32767）推送至栈顶
- * iconst_1表示将int类型1推送至栈顶(iconst_0 - iconst_5)
+ *
+ * ICONST - Push value between -1, ..., 5, other values cause an exception
+ *
+ * iconst_1表示将int类型1推送至栈顶(iconst_1 - iconst_5)
+ * 0 iconst_0
+ * -1 iconst_m1
  */
 public class MyTest2 {
 
