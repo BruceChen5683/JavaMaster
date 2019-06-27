@@ -6,10 +6,10 @@ package com.cjl.jvm.classloader;
  * 动态生成的类型，其父类型是Object类
  *
  * 对于数组来说，JavaDoc经常将构成数组的元素为Component，实际上就是将数组降低一个维度后的类型
- *
- * 助记符  anewarray  创建引用类（接口、类、数组）的数组，并将其引用值压入栈顶
+ * * 助记符  anewarray  创建引用类（接口、类、数组）的数组，并将其引用值压入栈顶
  *         multianewarray   创建多维引用类型的数组
  *         newarray   创建一个指定的原始类型（int、float、char等 ）的数组，并将其引用值压入栈顶
+
  *
  */
 public class MyTest4 {
