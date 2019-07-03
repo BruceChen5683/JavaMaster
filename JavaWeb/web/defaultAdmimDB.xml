@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Result>
+    <admin>
+        <name>cjl</name>
+        <password>123456</password>
+    </admin>
+    <admin>
+        <name>cjl2</name>
+        <password>123457</password>
+    </admin>
+</Result>
