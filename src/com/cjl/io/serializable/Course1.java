@@ -62,16 +62,16 @@ public class Course1 implements Externalizable {
         //TODO:
         Course1 course = new Course1("英语", 12f);
 
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+        objectOutputStream.writeObject(course);
+        byte[] bytes = byteArrayOutputStream.toByteArray();
+        objectOutputStream.close();
 
-        ByteArrayOutputStream out = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(out);
-        oos.writeObject(course);
-        byte[] bs = out.toByteArray();
-        oos.close();
-        System.out.println("============反序列化=============");
-        ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(bs));
-        Course1 course1 = (Course1) ois.readObject();
-        System.out.println("course1: " + course1);
+        ByteArrayInputStream byteArrayInputStream =  new ByteArrayInputStream(bytes);
+        ObjectInputStream objectInputStream = new ObjectInputStream(byteArrayInputStream);
+        Course1 course2 = (Course1) objectInputStream.readObject();
+        System.out.println("Course1.main"+course2);
 
     }
 
