@@ -1,6 +1,6 @@
 package com.cjl.multi_thread.base_control.exercise;
 
-import source.Fibonacci;
+import com.cjl.multi_thread.source.Fibonacci;
 
 import java.util.concurrent.Callable;
 
