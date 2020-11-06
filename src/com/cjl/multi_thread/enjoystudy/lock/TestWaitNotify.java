@@ -1,6 +1,5 @@
 package com.cjl.multi_thread.enjoystudy.lock;
 
-import javax.xml.soap.Text;
 
 public class TestWaitNotify {
     private static Empress empress = new Empress();
