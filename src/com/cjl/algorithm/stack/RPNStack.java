@@ -7,6 +7,7 @@ import java.util.Stack;
 /**
  *
  * 逆波兰表达式.png
+ * reverse Polish notation, RPN
  *
  *
  *
@@ -21,7 +22,7 @@ import java.util.Stack;
  * 4.操作符为 )，则依次出栈入列，直到匹配到第一个(为止，此操作符直接舍弃，(直接出栈舍弃
  *
  */
-public class TestStack {
+public class RPNStack {
     public static void main(String[] args) {
         String[] src = {"9","+","(","3","-","1",")","*","3","+","10","/","2"};
         String nums = "0123456789";
