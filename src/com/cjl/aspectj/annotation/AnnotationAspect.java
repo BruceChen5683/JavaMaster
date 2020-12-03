@@ -41,7 +41,8 @@ public class AnnotationAspect {
 //    }
 
     @Around("aspectTimeLog()")
-    public void testExecute(JoinPoint joinPoint){
+    public void testExecute(ProceedingJoinPoint joinPoint) throws Throwable{
+
 
         System.out.println("AnnotationAspect.testExecute around "+joinPoint.getSourceLocation());
         Signature signature = joinPoint.getSignature();
@@ -52,6 +53,8 @@ public class AnnotationAspect {
             System.out.println("AnnotationAspect.testExecute "+method.getName());
             TimeLog annotation = method.getAnnotation(TimeLog.class);
 
+            joinPoint.proceed();//执行原方法
+            
             System.out.println("AnnotationAspect.testExecute  "+annotation.module());
             System.out.println("AnnotationAspect.testExecute  "+annotation.num());
 
