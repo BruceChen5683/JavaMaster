@@ -49,18 +49,24 @@ public class AnnotationAspect {
         if (signature instanceof MethodSignature){
             MethodSignature methodSignature = (MethodSignature) signature;
             Method method = methodSignature.getMethod();
+            System.out.println("AnnotationAspect.testExecute "+method);
 
             System.out.println("AnnotationAspect.testExecute "+method.getName());
-            TimeLog annotation = method.getAnnotation(TimeLog.class);
+            //反射获取注解上的值，需要 TimeLog RetentionPolicy.RunTime  ，CLASS获取不到属性值
+            TimeLog annotation = null;
+            if (method.isAnnotationPresent(TimeLog.class)){
+                annotation = method.getAnnotation(TimeLog.class);
+            }
 
             joinPoint.proceed();//执行原方法
-            
+
+            if (annotation == null){
+                System.out.println("AnnotationAspect.testExecute  return ");
+                return;
+            }
             System.out.println("AnnotationAspect.testExecute  "+annotation.module());
             System.out.println("AnnotationAspect.testExecute  "+annotation.num());
 
-//            if (method.isAnnotationPresent(TimeLog.class)){
-//
-//            }
 
 //            for (Annotation annotation:method.getAnnotations()){
 //                Annotation[] allMAnnos = method.getAnnotations();
