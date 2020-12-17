@@ -9,7 +9,7 @@ public class AnnotationUsage {
     public static void main(String[] args) {
         AnnotationUsage annotationUsage = new AnnotationUsage();
 
-        System.out.println("AnnotationUsage.main "+annotationUsage.getClass().isAnnotationPresent(AnnotationTest.class));
+        System.out.println("AnnotationUsage.main xx"+annotationUsage.getClass().isAnnotationPresent(AnnotationTest.class));
 
         annotationUsage.method();
     }
